@@ -1,0 +1,20 @@
+{
+  "name": "expense-book",
+  "version": "1.0.0",
+  "description": "개인 가계부 웹앱 (Express + Neon PostgreSQL, Vercel 배포)",
+  "main": "lib/app.js",
+  "private": true,
+  "scripts": {
+    "start": "node local-server.js",
+    "dev": "node --watch local-server.js",
+    "db:init": "node scripts/init-db.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  }
+}
